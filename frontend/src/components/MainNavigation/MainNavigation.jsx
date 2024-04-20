@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { header, list } from './MainNavigation.module.css';
 
 function MainNavigation() {
@@ -6,10 +7,10 @@ function MainNavigation() {
       <nav>
         <ul className={list}>
           <li>
-            <a>Home</a>
+            <NavLink to='/'>Home</NavLink>
           </li>
           <li>
-            <a>Events</a>
+            <Link to='/events'>Events</Link>
           </li>
         </ul>
       </nav>
