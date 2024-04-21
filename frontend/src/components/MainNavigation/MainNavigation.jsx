@@ -10,7 +10,7 @@ function MainNavigation() {
             <NavLink to='/'>Home</NavLink>
           </li>
           <li>
-            <Link to='/events'>Events</Link>
+            <NavLink to='/events'>Events</NavLink>
           </li>
         </ul>
       </nav>
