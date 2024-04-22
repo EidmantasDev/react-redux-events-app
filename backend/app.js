@@ -2,6 +2,7 @@ const bodyParser = require('body-parser');
 const express = require('express');
 
 const eventRoutes = require('./routes/events');
+const authRoutes = require('./routes/auth');
 
 const app = express();
 
@@ -12,6 +13,8 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   next();
 });
+
+app.use(authRoutes);
 
 app.use('/events', eventRoutes);
 
