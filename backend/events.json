@@ -1,6 +1,20 @@
 {
   "events": [
     {
+      "title": "Dainu Svente",
+      "image": "https://girstutis.lt/wp-content/uploads/2023/07/Dainu-sventes-logo-horizontalus.jpg",
+      "date": "2024-06-06",
+      "description": "Dancing Festival",
+      "id": "dd902ee8-a7f6-4ce4-b5fa-e253248ff631"
+    },
+    {
+      "title": "Madrid Festival",
+      "image": "https://media.timeout.com/images/103607987/image.jpg",
+      "date": "2024-04-22",
+      "description": "Madrid Music Festival",
+      "id": "f132cbde-23be-44a1-837c-8fd2d5e05c40"
+    },
+    {
       "id": "e1",
       "title": "A dummy event",
       "date": "2023-02-22",
