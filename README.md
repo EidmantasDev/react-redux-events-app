@@ -1,4 +1,6 @@
-# React Redux
+# React Redux Events app
+
+Small website to demonstrate react-redux-router functionality and core features
 
 ## Run Locally
 
@@ -12,25 +14,21 @@ Go to the project directory
 
 ```bash
   cd react-redux-events-app
-  cd frontend
-  cd backend
-```
-
-Separetly install dependencies in frontend/backend
-
-```bash
-  npm i
 ```
 
 Start the frontend
 
 ```bash
+  cd frontend
+  npm i
   npm run dev
 ```
 
 Start the backend
 
 ```bash
+  cd backend
+  npm i
   npm run start
 ```
 
