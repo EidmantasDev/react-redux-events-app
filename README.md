@@ -1,6 +1,6 @@
 # React Redux Events app
 
-Small website to demonstrate react-redux-router functionality and core features
+Small website to demonstrate react-redux-router functionality and authentication, React core features
 
 ## Run Locally
 
