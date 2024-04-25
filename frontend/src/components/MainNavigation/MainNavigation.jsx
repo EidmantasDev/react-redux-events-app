@@ -1,12 +1,10 @@
-import { NavLink, useSearchParams } from 'react-router-dom';
+import { Form, NavLink, useRouteLoaderData } from 'react-router-dom';
 
 import { header, list, active } from './MainNavigation.module.css';
 import NewsletterSignup from '../NewsletterSignup/NewsletterSignup';
 
 function MainNavigation() {
-  const [searchParams] = useSearchParams();
-  const isLogin = searchParams.get('mode') === 'login';
-
+  const token = useRouteLoaderData('root');
   return (
     <header className={header}>
       <nav>
@@ -36,14 +34,23 @@ function MainNavigation() {
               Newsletter
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to='/auth?mode=login'
-              className={({ isActive }) => (isActive ? active : undefined)}
-            >
-              {isLogin ? 'Log In' : 'Sign up'}
-            </NavLink>
-          </li>
+          {!token && (
+            <li>
+              <NavLink
+                to='/auth?mode=login'
+                className={({ isActive }) => (isActive ? active : undefined)}
+              >
+                Authentication
+              </NavLink>
+            </li>
+          )}
+          {token && (
+            <li>
+              <Form action='/logout' method='post'>
+                <button>Logout</button>
+              </Form>
+            </li>
+          )}
         </ul>
       </nav>
       <NewsletterSignup />
